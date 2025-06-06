@@ -19,6 +19,14 @@ namespace HelloWorldTests
             bool resultat = Calendrier.EstBissextile(2019);
             Assert.False(resultat);
         }
+
+        [Fact(DisplayName = "2000 bis")]
+        public void Annee_2000_Est_Bissextile()
+        {
+            bool resultat = Calendrier.EstBissextile(2000);
+            Assert.True(resultat);
+        }
+
     }
 
 
