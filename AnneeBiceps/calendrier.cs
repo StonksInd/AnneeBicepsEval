@@ -7,7 +7,7 @@ namespace AnneeBiceps
     {
         public static bool EstBissextile(int annee)
         {
-            if (annee == 2024)
+            if (annee % 4 == 0 && annee % 100 != 0)
                 return true;
             return false;
         }
